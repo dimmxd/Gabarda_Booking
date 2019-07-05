@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+        <meta charset = "utf-8";>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+       
+        <title> Flights </title>
+    <head>
+        <title>Beyond Airlines</title>
+         <link rel = "stylesheet " type = "text/css" href = "Dimm_css.css">
+         <link rel = "stylesheet " type = "text/css" href = "Account.css">
+         <link rel = "stylesheet " type = "text/javascript" href = "otherpage.javascript">
+         
+
+         <script>
+         
+/*Passenger Increment*/ 
+var peter = document.getElementById("from").value;
+localStorage.setItem(Dimm,from);
+
+
+
+
+
+
+
+var i=0;
+function plus1(){
+  i++;
+  document.getElementById('IncDec1').value= i;
+}
+var j=0;
+function plus2(){
+  j++;
+  document.getElementById('IncDec2').value= j;
+}
+
+var k=0;
+function plus3(){
+  k++;
+  document.getElementById('IncDec3').value= k;
+}
+
+var l=0;
+function plus4(){
+  l++;
+  document.getElementById('IncDec4').value= l;
+}
+
+/*Passenger Decrement*/toggle
+var i=0;
+function minus1(){
+  i--;
+  document.getElementById('IncDec1').value= i;
+}var j=0;
+function minus2(){
+  j--;
+  document.getElementById('IncDec2').value= j;
+}var k=0;
+function minus3(){
+  k--;
+  document.getElementById('IncDec3').value= k;
+}var l=0;
+function minus4(){
+  l--;
+  document.getElementById('IncDec4').value= l;
+}
+
+
+         
+         </script>
+    </head>
+
+    <body>
+            <div class="leftmenu">
+                    <a href="" ><img src="Images\icon.png" height="45vh" class="Img"></a>
+                </div>
+        <div class="menu" float="center">
+            <div class="rightmenu">
+              <ul>
+                <li><a href="Account.html">Account</a></li>
+                <li class="active"><a href="Flights.html">Look for flights</a></li>
+                <li><a href="FlightsOut.html">Sign out</a></li>
+            </ul>
+            </div>
+        </div>
+      
+        <hr color="#E1DEBF" line-height="5vh" width="60%">
+
+
+
+      <div class="Trip">
+        <ul >
+            <li><a href="One-Way-In.html">One-way</a></li>
+            <li><a href="Road-trip-In.html">Road-trip</a></li>
+            <li><a href="Multiple-trip-In.html">Multi-City</a></li>
+        </ul>
+      </div>
+        <div class="SanDarating" align="left"><br><br>
+           
+            <label for="From" style="font-size: 12px">From</label><br>
+            <input type="text"  id="from" placeholder=" City or Airport" name="From" required><br><br>
+            <label for="Depart" style="font-size: 12px">Depart</label><br>
+            <input type="date" id="depart" placeholder=" MM/DD/YY" required><br>
+        </div>
+        <div align="center" style="margin-top: -39.4vh; padding:10vh; margin-bottom: 4vh;">
+        <img src="Images\transfer.png" style="height: 10vh; width:10vh;padding-bottom: -10vh; margin-top:5vh">
+        </div>
+
+        <div class="SanManggagaling" align="right"> <br><br>
+            <label for="To" style="font-size: 12px">To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+            <input type="text" placeholder=" City or Airport" name="To" required><br><br>
+            <label for="Return" style="font-size: 12px"> Return</label><br>
+            <input type="date" placeholder=" MM/DD/YY" name="Return" required>
+        </div>
+        <div style="margin-left:3vh; display:block">
+        <div class= "Pasahero"align="center" >
+            <ul>
+                <p align="center"> Passengers</p><br><br>
+                <div class="group">
+                        <li>Adults</li><input type="text" id="IncDec1" value="0" placeholder="0" name="Adults"><img src="Images\plus.png"  onclick="plus1();" style="width:16px; height:14px; margin:1vh 3vh;"><img src="Images\minus.png" onclick =" minus1();" style="width:16px; height:14px; margin: 1vh 0vh -1.8vh 9vh;"><br><br>
+                         </div>
+                      
+                      <div class="group"><li>Children</li><input type="text" id="IncDec2" value="0" placeholder="0" name="Children"><img src="Images\plus.png" onclick="plus2();" style="width:16px; height:14px; margin:1vh 3vh;"> <img src="Images\minus.png"onclick =" minus2();" style="width:16px; height:14px; margin: 1vh 0vh -1.8vh 9vh;"><br><br>
+                      </div>
+                      
+                      <div class="group"><li>Infants (In Seat) </li><input type="text" id="IncDec3" value="0" placeholder="0" name="Infants_Inseat"><img src="Images\plus.png" onclick="plus3();"  style="width:16px; height:14px; margin:1vh 3vh;"><img src="Images\minus.png" onclick =" minus3();"style="width:16px; height:14px; margin: 1vh 0vh -1.8vh 9vh;"><br><br>
+                      </div>
+                      
+                      <div class="group"><li>Infants (On lap)</li><input type="text"id="IncDec4" value="0" placeholder="0" name="Infants_Onlap"><img src="Images\plus.png"  onclick="plus4();"  style="width:16px; height:14px; margin:1vh 3vh;"><img src="Images\minus.png" onclick =" minus4();"style="width:16px; height:14px; margin: 1vh 0vh -1.8vh 9vh;"><br><br>
+                      </div></ul>
+
+</div>
+        </div>
+        <div style="margin-left: 10vh; display:block">
+      <div class="dropdown">
+            <div class="dropbtn" align="center">Class <img src="Images\dropdown.png" style="width:16px; height:14px; margin: -0.3vh 3vh; " ></div>
+            <div class="dropdown-content" align="center">
+              <a href="#">Economy</a>
+              <a href="#">Premium Economy</a>
+              <a href="#">First-Class</a>
+              <a href="#">Business</a>
+        </div></div>
+
+
+        <div class="Adropdown">
+            <div class="Adropbtn" align="center">Airlines<img src="Images\dropdown.png" style="width:16px; height:14px; margin: -0.3vh 3vh; " > </div>
+            <div class="Adropdown-content" style="font-size:14px;">
+            <input type="checkbox" onClick="toggle(this)"> Select All<br>
+            <input type="checkbox" name="option1" value="bar1"> Air Asia<br>
+            <input type="checkbox" name="option1" value="bar2"> Air China<br>
+            <input type="checkbox" name="option1" value="bar3"> Air Macaue<br>
+            <input type="checkbox" name="option1" value="bar4"> Air New Zealand<br>
+            <input type="checkbox" name="option1" value="bar5"> ANA<br>
+            <input type="checkbox" name="option1" value="bar7"> Asiana<br>
+            <input type="checkbox" name="option1" value="bar8"> Bangkok Airways<br>
+            <input type="checkbox" name="option1" value="bar9"> Cathay Dragon<br>
+            <input type="checkbox" name="option1" value="bar10"> Cathay Pacific<br>
+            <input type="checkbox" name="option1" value="bar11"> Cebgo<br>
+            <input type="checkbox" name="option1" value="bar12"> China Airlines<br>
+            <input type="checkbox" name="option1" value="bar13"> China EasternC<br>
+            <input type="checkbox" name="option1" value="bar14"> China Southern<br>
+            <input type="checkbox" name="option1" value="bar15"> Delta<br>
+            <input type="checkbox" name="option1" value="bar16"> Eva Air<br>
+            <input type="checkbox" name="option1" value="bar17"> Hongkong Airlines<br>
+            <input type="checkbox" name="option1" value="bar18"> JAL<br>
+            <input type="checkbox" name="option1" value="bar19"> Jeju Air<br>
+            <input type="checkbox" name="option1" value="bar20"> Jetstar<br>
+            <input type="checkbox" name="option1" value="bar21"> Korean Air<br>
+            <input type="checkbox" name="option1" value="bar22"> Malaysia Air<br>
+            <input type="checkbox" name="option1" value="bar23"> Peach Aviation<br>
+            <input type="checkbox" name="option1" value="bar24"> Philippines Airlines<br>
+            <input type="checkbox" name="option1" value="bar25"> Philippines Air Asia<br>
+            <input type="checkbox" name="option1" value="bar26"> Royal Brunei<br>
+            <input type="checkbox" name="option1" value="bar27"> Scoot <br>
+            <input type="checkbox" name="option1" value="bar28"> Shenzhen <br>
+            <input type="checkbox" name="option1" value="bar29"> Singapore Airlines<br>
+            <input type="checkbox" name="option1" value="bar30"> THAI <br>
+            <input type="checkbox" name="option1" value="bar31"> Tigerair Taiwan<br>
+            <input type="checkbox" name="option1" value="bar32"> United <br>
+            <input type="checkbox" name="option1" value="bar33"> Vietnam Airlines<br> 
+
+        </div></div></div>
+        <div class="slidecontainer" align="center" style="display: block;">
+          <input class="slider" type="range" name="rangeInput" min="5000" max="50000" onchange="updateTextInput(this.value);"></label><br>
+                <label style="color:#05234A; margin-left: 25vh;" >Price</label><input type="text" id="textInput" value=""style="margin-bottom:2vh; border:none; font-family:'Century Gothic'; font-size:15px; color:#05234A">
+                <div>
+                        <img src="Images\up-button.png" style="width:40px; height:40px; margin-left:185vh;">   </div>
+                    <div class="account">
+                      <button onclick="location.href='WhenSearchClick.html';" id="Search" type="submit" style="width:180px; height:40px; margin-top:0vh;margin-left:-2vh; margin-bottom:10vh;">Search</button>
+                    </div></div>
+    
+    </body>
+</html>

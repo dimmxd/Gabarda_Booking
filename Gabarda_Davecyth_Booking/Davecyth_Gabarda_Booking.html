@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+        <meta charset = "utf-8";>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+       
+    <head>
+        <title>Beyond Airlines</title>
+         <link rel = "stylesheet " type = "text/css" href = "Dimm_css.css">
+         
+      <script>
+        // Get the modal
+        var modal = document.getElementById('SignIn');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+  function toggle(source) {
+  checkboxes = document.getElementsByName('option1');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }}
+
+function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+        </script>  
+      
+        
+    </head>
+    <body>
+            <div class="leftmenu">
+                    <a href="" ><img src="Images\icon.png" height="45vh" class="Img"></a>
+                </div>
+        <div class="menu" float="center">
+            <div class="rightmenu">
+                <ul>
+                    <li  class="active"><a href="Davecyth_Gabarda_Booking.html">Home</a></li>
+                    <li ><a href="FlightsOut.html" >Look for flights</a></li>
+                    <li><a onclick="document.getElementById('SignIn').style.display='block'"> Sign in</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+</div>
+
+<hr color="#E1DEBF" line-height="5vh" width="60%">
+
+<div id="SignIn" class="modal">
+    <span onclick="document.getElementById('SignIn').style.display='none'" 
+  class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="Userloggedin.html">
+  
+    <div class="container">
+      <p>Login</p><br><br>
+
+
+      <label for="uname" style="margin-left:16vh;">Username</label><br>
+      <div style="width: 260px; height:50px; background-color:white; border: 2px solid #E1DEBF;margin-left:16vh; margin-top:0 vh;border-radius: 5px;">
+      <input  style="margin-left:8vh;" type="text" placeholder=" Enter Username" name="uname" required>
+      <img src="Images\User.png" style="width:40px; height:40px; display:block;position:absolute; margin-left:1vh; margin-top:-6.5vh;" ></div>
+       <br>
+    
+      <label for="psw" style="margin-left:16vh;">Password</label><br>
+      <div style="width: 260px; height:50px; background-color:white; border: 2px solid #E1DEBF;margin-left:16vh; margin-top:0 vh;border-radius: 5px;">
+     
+          <input style="margin-left:8vh;" type="password" placeholder=" Enter Password"  name="psw" required>
+          <img src="Images\password.png" style="width:40px; height:40px; display:flex; margin-left:1vh; margin-top:-6.5vh;" >
+       </div>
+          <button type="submit" style="width:180px; height:40px; margin-top:30px;margin-left: 23vh;">Login</button>
+         <button style="width:180px; height:40px; margin-top:20px;margin-left: 23vh;" type="button" onclick="document.getElementById('SignIn').style.display='none'" class="cancelbtn">Cancel</button><br>
+    </div>  
+      
+         <div  class="rem" align = "center">
+          <input style="margin-top: 20px; margin-left:3vh;" type="checkbox" id="Remember me" checked name="Remember me" color="#05253A"> Remember me<br>
+          <span style="margin-top: 20px; margin-left:3vh;" class="psw" >Forgot <a href="#" style="text-decoration:none;">password?</a></span><br>
+         </div>
+
+  
+</form>
+</div>
+</body>
+</html>

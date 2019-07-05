@@ -1,0 +1,542 @@
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
+
+ul{
+    float:center;
+    list-style-type:none;
+    margin-top:15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration:none;
+    color: #EFEEDD;
+    padding: 10px 50px;
+    border-style: none;
+    border: 1px solid #05253A; 
+    border-style: none;
+    transition: 0.6s ease;
+    
+}
+
+
+ul li a:hover{
+    background-color: #EFEEDD;
+    color: #05253A;
+    font-weight: inherit;
+    
+}
+ul li.active a{
+    background-color: #EFEEDD;
+    color: #05253A;
+   
+}
+
+.container button{
+    
+    background-color:#FFFFFF;
+    border:1px solid #05253A;  
+    border-radius: 20px; 
+    padding: 1vh 50px;
+    width:180;
+    height:40;
+    align-content: center;
+    margin-left: 35%;
+    margin-top: 4vh;
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 1px 2px #768793;
+    font-size: 14px;
+    color:#05253A;
+
+}
+
+
+
+.leftmenu{
+    width:25%;
+    line-height:0.5px;
+    float:center;
+ }
+ .rightmenu{
+    float:center;
+ }
+
+
+.menu{
+    margin-top: 15px;
+    margin-left: 15%;       
+    width:70%;
+    height:35px;
+    background-color:#05253A;
+ 
+}
+
+.Img{
+ 
+    margin-left: 30vh;
+    margin-top: 2vh;
+    padding-left: 125%;
+    padding-top: -50%;
+}
+
+.Image_{
+    
+    margin:auto;
+    float: center;
+}
+.container p{
+    font-size: 50px;
+    font-family: "Vivaldi";
+    margin-left: 5vh;
+    margin-top: 5vh;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10vh;
+  }
+
+.container label{
+    float:center;
+    font-size:16px;
+    margin-left: 10vh;
+    margin-top: 2vh;
+    padding: 8px 0;
+    color: #05253A;
+}
+
+.container input{
+   
+    width: 200px;
+    height:40px;
+    font-size:13px;
+    padding: 5px 0;
+    margin-left: 18vh;
+    margin-top: 1vh;
+    display: inline-block;
+    border: 2px solid #F1EFE0; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:#05253A;
+    background-color: #F1EFE0;
+    
+}
+::placeholder { 
+  color: #768793;
+}
+
+
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 50px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 35%;
+    height:82%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.cancelbtn{
+    margin:1vh auto;
+}
+
+.checkb{
+    font-size:14px;
+    margin-left: 0vh;
+    margin-top: 0vh;
+    color:#05253A;
+
+}
+.Trip{
+    margin-top: 5px;
+    margin-left: 25%;       
+    width:50%;
+    height:35px;
+    background-color:#FFFFFF;
+    float:center;
+    list-style-type:none;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 0vh;
+}
+.Trip li{
+    display: inline-block;
+}
+.Trip li a{
+    text-decoration:none;
+    color: #05253A;
+    padding: 10px 60px;
+    border-style: none;
+    border-spacing: 0;
+    border: 1px solid #05253A; 
+    transition: 0.6s ease;
+    
+    
+    
+}
+
+.Trip li a:hover{
+    background-color: #05253A;
+    color: #EFEEDD;
+    font-weight: inherit;
+    
+}
+.Trip li.active a{
+    background-color: #05253A;
+    color: #EFEEDD;
+   
+}
+
+
+ 
+.rem{
+    color: #05253A;
+    font-size:13px;
+}
+
+.SanDarating input{
+   
+    width: 325px;
+    overflow:hidden;
+    font-size:13px;
+    padding: 10px 10px;
+    margin: 1vh 30vh 1vh 40vh; 
+    display: inline-block;
+    border: 2px double #E1DEBF;
+    border-radius: 5px;  
+    box-sizing: border-box;
+    color:#05253A;
+    background-color: #F4F3E7;
+  
+}
+
+.SanDarating label{
+    margin: -10vh 1vh -50vh 40vh; 
+}
+
+.SanDarating .SD_1W{
+margin-top:-3vh;
+}
+
+.SanManggagaling{
+  margin: -33.8vh 5vh 1vh -40vh; 
+
+}
+.SanManggagaling input{
+   
+  width:325px;
+  overflow:hidden;
+  font-size:13px;
+  padding: 10px 10px;
+  margin: 1vh 36vh 1vh -40vh; 
+  border: 2px double #E1DEBF;
+  border-radius: 5px; 
+  box-sizing: border-box;
+  color:#05253A;
+  background-color: #F4F3E7;
+}
+
+.SanManggagaling label{
+  margin: -10vh 83vh -50vh 40vh; 
+}
+
+
+.Pasahero ul{
+         
+    width: 80vh;
+    height:40vh;
+    background-color:#FFFFFF;
+    border-radius: 3px;
+    border: 3px solid #FFFFFF;
+    box-shadow: 4px #768793;
+    float: center;
+    list-style-type:none;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin: 10vh 30vh 1vh 57vh;
+    color: #05234A;
+    position: absolute;
+
+}
+
+
+.group{
+  display:flex;
+  margin-bottom:10px;
+}
+.Pasahero ul li{
+  margin: 1vh -20vh 1vh 10vh; 
+  position: absolute;
+
+}
+
+
+ .Pasahero input{
+  width:30px;
+  overflow:hidden;
+  font-size:14px;
+  padding: -2px 1px;
+  margin: -1vh -14vh 1vh 60vh;
+  border: 2px solid #E1DEBF;  
+  box-sizing: border-box;
+  color:#05253A;
+  text-align: center;
+  position:relative;
+
+
+    } 
+
+    .dropbtn {
+      background-color: #FFFFFF;
+      color: #05253A; 
+      padding: 1vh;
+      font-size: 14px;
+      cursor: pointer;
+      width: 30vh;
+      font-family: "Century Gothic";
+      position: relative;
+    }
+    .Adropbtn {
+      background-color: #FFFFFF;
+      color: #05253A; 
+      padding: 1vh;
+      font-size: 14px;
+      cursor: pointer;
+      width: 30vh;
+      font-family: "Century Gothic";
+      position: relative;
+    }
+
+    .dropbtn:hover {
+      background-color: #FFFFFF;
+      color: #05253A; 
+      padding: 1vh;
+      font-size: 14px;
+      border:none;  
+      cursor: pointer;
+      width: 30vh;
+      font-family: "Century Gothic";
+    }
+
+    
+    .Adropbtn:hover {
+      background-color: #FFFFFF;
+      color: #05253A; 
+      padding: 1vh;
+      font-size: 14px;
+      border:none;  
+      cursor: pointer;
+      width: 30vh;
+      font-family: "Century Gothic";
+    }
+   
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 3vh 30vh 2vh 61vh;
+    }
+
+    .Adropdown {
+      position:absolute;
+      display: inline-block;
+      margin: 3vh 30vh 2vh -25vh;
+    }
+    
+  
+    .dropdown-content {
+      display: none;
+      position: relative;
+      background-color: #05253A;
+      min-width: 30vh;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .Adropdown-content {
+      display: none;
+      position: relative;
+      background-color: #05253A;
+      width: 30vh;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    hr{
+      float:center;
+       margin:5vh auto;
+    }
+   
+    .dropdown-content a {
+      color: #05253A;
+      padding: 2px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    
+    }
+
+    .Adropdown-content input {
+      color: #05253A;
+      padding: 1px;
+      text-decoration: none;
+      margin-left: 2vh;
+      margin-top: 1vh;
+      box-shadow: 1px solid #768793;
+        
+
+    }
+
+    .dropdown-content a:hover {background-color: #05253A;
+    color:#EFEEDD;}
+
+    .Adropdown-content a:hover {background-color: #EFEEDD;
+    
+      position:absolute;}
+  
+    .dropdown:hover .dropdown-content {
+      background-color: #FFFFFF;
+      color: #05253A;
+      font-weight: inherit;
+      display: block;
+      position:absolute;
+     
+    }
+    .Adropdown:hover .Adropdown-content {
+      background-color: #FFFFFF;
+      color: #05253A;
+      font-weight: inherit;
+      display: block;
+      position:absolute;
+    }
+/*
+    .Airlines{
+      background-color: #05253A;
+      color: #E1DEBF;
+      width:vh;
+      height: 140vh;
+      font-family: "Comic Sans MS";
+      font-size: 15px;
+      line-height:4vh;
+      border-radius:5px;
+      margin-left: 85vh;
+      padding-left:3vh;
+    }*/
+    .slider {
+      -webkit-appearance: none;
+      width: 70vh;
+      height: 5 px;
+      border-radius: 5px;   
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      margin: 50vh 30vh 2vh 30vh;
+    }
+    .slidecontainer label{
+      margin: 10px;
+    }
+    
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; 
+      background: #05253A;
+      cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #05253A;
+      cursor: pointer;
+    }
+
+    .AccountSetup{
+      background-color: #768793;
+    
+
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: "Comic Sans MS";
+    }

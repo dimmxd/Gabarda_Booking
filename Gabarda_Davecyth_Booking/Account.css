@@ -1,0 +1,77 @@
+   /* Style tab links */
+    .tablink {
+        background-color: #FFFFFF;;
+      color: #05253A;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 13px;
+      width: 200px;
+    }
+    
+    .tablink:hover {
+      background-color: #FFFFFF;
+      color: #05253A;
+      border-bottom: 3px solid #05253A;
+      
+    }
+
+    
+     
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: #05253A;
+      display: none;
+      padding: 100px 20px;
+      height: 120vh;
+      width: 100vh;
+      background-color: #ffffff;
+    }
+  
+.account button{
+    
+        background-color:#FFFFFF;
+        border:1px solid #05253A;  
+        border-radius: 20px; 
+        padding: 1px ;
+        width:180px;
+        height:30px;
+        align-content: center;
+        border-style: solid;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 1px 2px #768793;
+        font-size: 13px;
+        color:#05253A;
+    
+    }
+
+
+    .Userprof input{
+   
+        width:200px;
+        overflow:hidden;
+        font-size:13px;
+        padding: 5px 5px;
+        position:absolute;
+        border: 2px double #E1DEBF;
+        border-radius: 5px; 
+        box-sizing: border-box;
+        color:#05253A;
+        background-color: #F4F3E7;
+        margin-left:5vh;
+      }
+
+      .Userprof label{
+          margin-left:5vh;
+          
+      }
+
+
+      
+    
+    
+    
